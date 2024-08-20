@@ -26,6 +26,41 @@ $result = $conn->query($sql);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-body-light text-bg-danger fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder ml-4 nombre" href="#">
+               
+               Hotels 
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            
+            <ul class="navbar-nav me-auto mb-  2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active  fw-bolder " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="habitacion.html">habitaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="ind.php">Agregar</a>
+              </li>
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link fw-bold" href="logos.html">logos</a>
+              </li> -->
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-bg-success text-bg-success"   type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <div class="container mt-5">
         <h1 class="mb-4">Agregar una nueva habitación</h1>
         <form action="guardar_habitacion.php" method="POST" id="roomForm" class="mb-5">
